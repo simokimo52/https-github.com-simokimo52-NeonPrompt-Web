@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'DM Sans', sans-serif;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    --bauhaus-red: #E53935;
+    --bauhaus-blue: #1976D2;
+    --bauhaus-yellow: #FFD700;
+    --bauhaus-bg: #F5F5F5;
+    --bauhaus-surface: #FFFFFF;
+    --bauhaus-text: #1A1A1A;
+  }
+
+  * {
+    border-radius: 0px !important;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F5F5F5;
+    color: #1A1A1A;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.bauhaus-card {
+  background-color: #FFFFFF;
+  border: 4px solid #1A1A1A;
+  box-shadow: 6px 6px 0px #1A1A1A;
+}
+
+.bauhaus-shadow {
+  box-shadow: 6px 6px 0px #1A1A1A;
+}
+
+.bauhaus-shadow-sm {
+  box-shadow: 4px 4px 0px #1A1A1A;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

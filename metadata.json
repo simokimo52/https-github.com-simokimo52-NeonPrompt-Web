@@ -1,0 +1,6 @@
+{
+  "name": "NeonPrompt — AI Prompt Library & Engineering Platform",
+  "description": "Production-grade AI prompt intelligence platform with 5,000+ verified system prompts across 20 categories, interactive prompt builder, token estimator, and anti-injection security auditing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
